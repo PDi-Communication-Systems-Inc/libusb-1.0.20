@@ -21,7 +21,7 @@
 #include <string.h>
 #include <memory.h>
 
-#include "libusb.h"
+#include "../../libusb/libusb.h"
 #include "libusb_testlib.h"
 
 /** Test that creates and destroys a single concurrent context

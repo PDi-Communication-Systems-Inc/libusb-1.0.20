@@ -24,7 +24,7 @@
 #include <string.h>
 #include <stdarg.h>
 
-#include "libusb.h"
+#include "../../libusb/libusb.h"
 
 #if defined(_WIN32)
 #define msleep(msecs) Sleep(msecs)

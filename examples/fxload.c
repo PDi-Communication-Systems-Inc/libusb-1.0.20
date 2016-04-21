@@ -29,7 +29,7 @@
 #include <sys/types.h>
 #include <getopt.h>
 
-#include "libusb.h"
+#include "../../libusb/libusb.h"
 #include "ezusb.h"
 
 #if !defined(_WIN32) || defined(__CYGWIN__ )

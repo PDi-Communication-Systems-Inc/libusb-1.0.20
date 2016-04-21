@@ -21,7 +21,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "libusb.h"
+#include "../../libusb/libusb.h"
 
 int done = 0;
 libusb_device_handle *handle = NULL;

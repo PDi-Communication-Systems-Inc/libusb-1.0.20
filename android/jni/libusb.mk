@@ -21,7 +21,6 @@ LIBUSB_ROOT_REL:= ../..
 LIBUSB_ROOT_ABS:= $(LOCAL_PATH)/../..
 
 # libusb
-
 include $(CLEAR_VARS)
 
 LIBUSB_ROOT_REL:= ../..
@@ -42,12 +41,14 @@ LOCAL_SRC_FILES := \
 LOCAL_C_INCLUDES += \
   $(LOCAL_PATH)/.. \
   $(LIBUSB_ROOT_ABS)/libusb \
-  $(LIBUSB_ROOT_ABS)/libusb/os
+  $(LIBUSB_ROOT_ABS)/libusb/os \
+  $(TOP)/system/core/include/android 
 
 LOCAL_EXPORT_C_INCLUDES := \
   $(LIBUSB_ROOT_ABS)/libusb
 
-LOCAL_LDLIBS := -llog
+LOCAL_LDLIBS += -llog
+LOCAL_SHARED_LIBRARIES += liblog
 
 LOCAL_MODULE := libusb1.0
 

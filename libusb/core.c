@@ -37,9 +37,7 @@
 #include <syslog.h>
 #endif
 
-#ifdef __ANDROID__
 #include <android/log.h>
-#endif
 
 #include "libusbi.h"
 #include "hotplug.h"

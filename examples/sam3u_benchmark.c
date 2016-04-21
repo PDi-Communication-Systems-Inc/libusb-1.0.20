@@ -28,7 +28,7 @@
 #include <errno.h>
 #include <signal.h>
 
-#include <libusb.h>
+#include "../../libusb/libusb.h"
 
 
 #define EP_DATA_IN	0x82
